@@ -29,7 +29,13 @@ body {
 
 #left-container {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     background-color: aquamarine;
+    background-image: url(img/coffee.jpg);
+    background-size: cover;
+    text-align: center;
+    justify-content: space-between;
 }
 
 #right-container {
@@ -40,8 +46,12 @@ body {
 }
 
 #credit {
-    position: absolute;
     bottom: 0;
+    color: whitesmoke;
+}
+
+#credit a {
+    color: burlywood;
 }
 
 .bold {
@@ -67,4 +77,15 @@ label {
     flex-wrap: wrap;
     gap: 5rem;
     margin: 3rem 0;
+}
+
+button {
+    padding: 1rem;
+    background-color: burlywood;
+    border-radius: 1rem;
+    border-style: none;
+}
+
+button:hover {
+    background-color: rgb(194, 159, 113);
 }
